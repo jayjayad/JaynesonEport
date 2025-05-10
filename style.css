@@ -1,7 +1,8 @@
 #homepage-header {
     background-image: url("https://w0.peakpx.com/wallpaper/200/532/HD-wallpaper-black-plain.jpg");
-    
+    background-size: cover; /* Ensures the background image covers the header */
     color: #EEE;
+    padding: 50px 0; /* Optional, adjust padding to give more space */
 }
 
 header {
@@ -13,25 +14,26 @@ header h1 {
     color: #FFF;
 }
 
-
 img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    
-    height:;
-}
-#jay{
-    width:;
-    height:400px;
+    height: auto; /* Automatically adjust the height */
+    max-width: 100%; /* Ensures the image doesn't exceed its container's width */
 }
 
-#contact{
-    padding:15px;
+#jay {
+    width: 100%; /* Make the element responsive */
+    height: 400px; /* Set the fixed height */
 }
 
-#imgbro{
-    width:400px;
+#contact {
+    padding: 15px;
+}
+
+#imgbro {
+    width: 100%; /* Makes the image responsive */
+    max-width: 400px; /* Limits the maximum width */
 }
 
 .slider {
@@ -39,6 +41,7 @@ img {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
+    gap: 10px; /* Optional: Adds space between images */
 }
 
 .slides {
@@ -61,8 +64,8 @@ img {
     height: auto;
     object-fit: contain;
     max-height: 500px;
-}    
+}
 
-.resume{
+.resume {
     width: 50%;
 }
